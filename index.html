@@ -21,14 +21,13 @@
   	<p id="w"></p>
     <ul id="messages"></ul>
     <form>
-      <input id="m" autocomplete="off" /><button type="submit">Send</button>
+      <input id="m" autocomplete="off" /><button>Send</button>
     </form>
     <script>
 	  var socket = io();
 	  var nick=prompt("¿Y tú como te llamas?");
 	  $('form').submit(function(event){
 	    socket.emit('chat message', $('#m').val(), nick);
-	    event.preventDefault();
 	    $('#m').val('');
 	    return false;
 	  });

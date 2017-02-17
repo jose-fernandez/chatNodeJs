@@ -10,7 +10,7 @@ http.listen(process.env.PORT || "3000", function(){
 
 
 app.get('/', function(req, res){
-  res.sendfile('index.html');
+  res.sendFile('index.html');
 });
 
 io.on('connection', function(socket){
@@ -27,6 +27,6 @@ io.on('connection', function(socket){
   });
   socket.on("writing", function(nick){
   	io.sockets.emit("user writing", `${nick} is writing...`);
-  })
+  });
 });
 
