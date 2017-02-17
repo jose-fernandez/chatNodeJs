@@ -26,8 +26,9 @@
     <script>
 	  var socket = io();
 	  var nick=prompt("¿Y tú como te llamas?");
-	  $('form').submit(function(){
+	  $('form').submit(function(event){
 	    socket.emit('chat message', $('#m').val(), nick);
+	    event.preventDefault();
 	    $('#m').val('');
 	    return false;
 	  });
