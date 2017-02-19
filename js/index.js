@@ -24,9 +24,9 @@ io.on('connection', function(socket){
   });
 });
 
-const PORT = process.env.PORT || '3333';
+const PORT = process.env.PORT || '3343';
 
 http.listen(PORT, function() {
-	const port = process.env.PORT || '3333';
+	const port = process.env.PORT || '3343';
 	console.log(`Listening on port ${PORT}`);
 });
