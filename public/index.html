@@ -26,14 +26,14 @@
     <script>
 	  var socket = io();
 	  var nick=prompt("¿Y tú como te llamas?");
-	  $('form').submit(function(event){
+	  $('button').click(function(){
 	    socket.emit('chat message', $('#m').val(), nick);
 	    $('#m').val('');
-	    event.preventDefault();
+	    return false;
 	  });
-	  $('input').keydown(function(){
-	  	socket.emit("writing", nick);
-	  })
+	  // $('input').keydown(function(){
+	  // 	socket.emit("writing", nick);
+	  // })
 	  
 	  socket.on('chat message', function(msg, nick){
    		$('#messages').append($('<li>').text(nick+' dice: '+msg));
