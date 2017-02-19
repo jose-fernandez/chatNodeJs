@@ -32,9 +32,9 @@
 	    socket.emit('chat message', $('#m').val(), nick);
 	    $('#m').val('');
 	  });
-	  // $('input').keydown(function(){
-	  // 	socket.emit("writing", nick);
-	  // })
+	  $('input').keydown(function(){
+	  	socket.emit("writing", nick);
+	  })
 	  
 	  socket.on('chat message', function(msg, nick){
    		$('#messages').append($('<li>').text(nick+' dice: '+msg));
