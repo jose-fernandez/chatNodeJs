@@ -8,8 +8,7 @@ var cont=0;
 app.use(express.static('public'));
 
 io.on('connection', function(socket){
-	cont++;
-  io.sockets.emit("new user", "Un nuevo usuario se ha conectado", cont);
+  io.sockets.emit("new user", "Un nuevo usuario se ha conectado", ++cont);
 
   socket.on('chat message', function(msg, nick){
     io.sockets.emit('chat message', msg, nick);
