@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>Socket.IO chat</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    
 	
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,6 +23,11 @@
       <input id="m" type="text" name="msg" value="">
       <input id="btn" type="submit" value="Send">
     </form>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
     var nick="hola";
 	  var socket = io();
