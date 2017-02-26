@@ -170,7 +170,7 @@ $('form').submit(function(e){
 	socket.emit("writing", false);
 
 	$("#messages").animate({ scrollTop: $("ul").height()+inc}, "slow");
-	inc+=88;
+	inc+=388;
 });
 
 $('#m').keydown(function(){
