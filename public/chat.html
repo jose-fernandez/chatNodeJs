@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body class="body">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            
+            <div class="contenedor">
+              <button class="botonF1">
+                <span>+</span>
+              </button>
+              <button class="btn botonF2">
+                <span>+</span>
+              </button>
+              <button class="btn botonF3">
+                <span>+</span>
+              </button>
+              <button class="btn botonF4">
+                <span>+</span>
+              </button>
+              <button class="btn botonF5">
+                <span>+</span>
+              </button>
+             </div>
+
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="fixed-header-drawer-exp">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Chat nodeJs</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <ul id="messages" class="demo-list-three mdl-list"></ul>
+          
+          <form class="textChat">
+            <div id="writing"></div>
+            <input id="m" type="text" name="msg" value="">
+            <input id="btn" type="submit" value="Send">
+          </form> 
+        </div>
+      </main>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/socketIO.js"></script>
+    <script src="js/buttons.js"></script>
+  </body>
+</html>

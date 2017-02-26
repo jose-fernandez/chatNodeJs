@@ -1,7 +1,6 @@
 {
-  "name": "chat",
+  "name": "react",
   "version": "0.0.1",
-  "description": "",
   "main": "/public/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +8,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "delivery": "0.0.6",
     "express": "^4.14.1",
-    "socket.io": "^1.7.2"
-  }
+    "socket.io": "^1.7.2",
+    "socketio-file-upload": "^0.6.0"
+  },
+  "devDependencies": {
+    "delivery": "0.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose-fernandez/chatNodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jose-fernandez/chatNodeJs/issues"
+  },
+  "homepage": "https://github.com/jose-fernandez/chatNodeJs#readme",
+  "description": ""
 }
